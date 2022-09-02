@@ -665,7 +665,7 @@ max-width: 700px;
  
 
  /*--------------------------- Media queries - Responsive Design --------------------------------------------------*/
- @media screen and (max-width:1000px), (orientation:landscape){
+ @media screen and (max-width:1000px){
 .menu-btn{
   display: block;
 }
@@ -706,8 +706,11 @@ nav .menu li{
 footer br{
   display: none;  
   }
+  body{
+    overflow-x: hidden !important;
+  }
 }
-@media screen and (max-width:700px) {
+@media screen and (max-width:768px),(orientation:landscape)  {
   html{
     font-size: 14px;
   }
@@ -735,7 +738,9 @@ footer br{
     grid-template-columns: 1fr;
   }
   
-  
+  body{
+    overflow-x: hidden !important;
+  }
   .explore h2{
     text-align: center;
   } 
@@ -746,6 +751,8 @@ footer br{
   display: none;  
   }
 }
+
+
 /* Animation for red neon light */
  @-webkit-keyframes flicker-in-1{0%{opacity:1}10%{opacity:1}10.1%{opacity:1}20.1%{opacity:1}30%{opacity:0}30.1%{opacity:1}30.5%{opacity:1}45.1%{opacity:1}50%{opacity:1}60.1%{opacity:0}65%{opacity:0}65.1%{opacity:1}75%{opacity:1}75.1%{opacity:0}77%{opacity:0}77.1%{opacity:1}85%{opacity:1}85.1%{opacity:0}86%{opacity:0}86.1%{opacity:1}100%{opacity:1}}@keyframes flicker-in-1{10%{opacity:1}10.1%{opacity:1}20.1%{opacity:1}30.1%{opacity:1}30.5%{opacity:1}30.6%{opacity:0}45%{opacity:0}45.1%{opacity:1}50%{opacity:1}55%{opacity:1}55.1%{opacity:0}57%{opacity:0}57.1%{opacity:1}60%{opacity:1}60.1%{opacity:0}65%{opacity:0}65.1%{opacity:1}75%{opacity:1}75.1%{opacity:0}77%{opacity:0}77.1%{opacity:1}85%{opacity:1}85.1%{opacity:0}86%{opacity:0}86.1%{opacity:1}100%{opacity:1}}
  /* Animation for header-body */
