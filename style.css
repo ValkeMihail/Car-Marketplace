@@ -628,6 +628,7 @@ max-width: 700px;
 
 
  footer{
+  margin-bottom:1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -664,7 +665,7 @@ max-width: 700px;
  
 
  /*--------------------------- Media queries - Responsive Design --------------------------------------------------*/
- @media screen and (max-width:1000px){
+ @media screen and (max-width:1000px), (orientation:landscape){
 .menu-btn{
   display: block;
 }
@@ -702,6 +703,9 @@ nav .menu-open{
 nav .menu li{
   margin: 1em 0;
 }
+footer br{
+  display: none;  
+  }
 }
 @media screen and (max-width:700px) {
   html{
@@ -737,6 +741,9 @@ nav .menu li{
   } 
   .grid{
     height: 20em;
+  }
+  footer br{
+  display: none;  
   }
 }
 /* Animation for red neon light */
