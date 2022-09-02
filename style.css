@@ -703,9 +703,7 @@ nav .menu-open{
 nav .menu li{
   margin: 1em 0;
 }
-footer br{
-  display: none;  
-  }
+
   body{
     overflow-x: hidden !important;
   }
@@ -747,8 +745,8 @@ footer br{
   .grid{
     height: 20em;
   }
-  footer br{
-  display: none;  
+  br.responsive {
+    display: none; 
   }
 }
 @media screen and (max-width:1000px)and (orientation:landscape)  {
