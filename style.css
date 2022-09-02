@@ -755,11 +755,11 @@ footer br{
   html{
     font-size: 14px;
   }
-  
   .services .card{
-    margin: 4em 0 1em 0;
+    padding: 0;
+    
   }
-  
+ 
   body{
     overflow-x: hidden !important;
   }
