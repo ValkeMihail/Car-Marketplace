@@ -710,7 +710,7 @@ footer br{
     overflow-x: hidden !important;
   }
 }
-@media screen and (max-width:768px),(orientation:landscape)  {
+@media screen and (max-width:768px)  {
   html{
     font-size: 14px;
   }
@@ -751,6 +751,26 @@ footer br{
   display: none;  
   }
 }
+@media screen and (max-width:1000px)and (orientation:landscape)  {
+  html{
+    font-size: 14px;
+  }
+  
+  .services .card{
+    margin: 4em 0 1em 0;
+  }
+  
+  body{
+    overflow-x: hidden !important;
+  }
+  .explore h2{
+    text-align: center;
+  } 
+  .grid{
+    height: 20em;
+  }
+  }
+
 
 
 /* Animation for red neon light */
