@@ -59,7 +59,7 @@ section,footer{
 }
 
 header{
-  background:url(/img/bg.jpg) center;
+  background:url(bg.jpg) center;
 	position:relative;
 	background-repeat: no-repeat;
 	background-size:cover ;
@@ -554,7 +554,7 @@ background: rgb(0, 70, 4);
 }
 
 .grid div {
-  background: url(/img/carbg.gif) fixed no-repeat;
+  background: url(carbg.gif) fixed no-repeat;
   background-size: 800px;
   background-position:1em 80%;
   border-radius: 10px;
@@ -613,7 +613,7 @@ background: rgb(0, 70, 4);
 }
 .trial{
   text-align: center;
-  background: url(/img/trial.png) fixed no-repeat;
+  background: url(trial.png) fixed no-repeat;
  background-size: cover;
  background-position:auto;
  padding: 6em 1em;
