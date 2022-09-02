@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/7d71a79c00.js" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+    <title>Car MarketPlace</title>
+  </head>
+  <body>
+    
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav>
+          <a href="index.html" target="_self" class="brand">Car Marketplace</a>
+          <ul class="menu">
+           <li><a href="index.html">Home</a></li>
+            <li><a onclick="openSellForm()"  href="#">Sell a Car</a> </li>
+            <li><a href="#">Buy a Car</a></li>
+            <li><a href="#">Show Cars</a></li>
+            <li><a id="btn-login-menu" onclick="openLoginForm()" href="#" class="btn btn-primary">Log in</a></li>
+          </ul>  
+          <a onclick="openLoginForm()" href="#" class="btn btn-primary">Log in</a> 
+          <!-- <div class="popup-overlay"></div>
+            <div class="popup-sell">
+              <div onclick="closeSellForm()" class="popup-close">&times;</div>
+              <div action="insert.php" method="post" class="form">
+                <div class="avatar">
+                  <img src="car-melt.gif" alt="">
+                </div>
+                <div class="headform">
+                CAR DETAILS
+                </div>
+                <h2>General Info</h2>
+                <fieldset>
+                  <legend>Condition:</legend>  
+                  <input type="radio" id="New" name="condition" value="New">
+                  <label for="New">New</label>
+                  <input type="radio" id="Used" name="conditon" value="Used">
+                  <label for="Used">Used</label>
+                </fieldset>
+                <div class="flex-container">
+                  <div class="element">
+                    <label for=":ma">Manufacturer:</label>
+                    <input name="ma" id="ma" type="text" placeholder="Enter Your Car Manufacturer"/>
+                  </div>
+                  <div class="element">
+                    <label for=":mo">Model:</label>
+                    <input name="mo" id="mo" type="text" placeholder="Enter Your Car Model"/>
+                  </div>
+                  <div class="element">
+                    <label for=":pr">Price:</label>
+                    <input name="pr" id="pr" type="text" placeholder="Enter Your Car Price"/>
+                  </div>
+                  <div class="element">
+                    <label for=":cc">Category:</label>
+                    <input name="cc" id="cc" type="text" placeholder="Enter Your Car Category"/>
+                  </div>
+                  <div class="element">
+                    <button type="submit" class="btn btn-primary">Add</button>
+                  </div>
+                </div>
+            </div>
+          </div> -->
+            
+          <!-- <div class="popup-overlay"></div>
+          <div class="popup">
+            <div onclick="closeLoginForm()" class="popup-close">&times;</div>
+            <div class="form">
+              <div class="avatar">
+                <img src="car-melt.gif" alt="">
+              </div>
+              <div class="headform">
+              LOG IN
+              </div>
+              <div class="element">
+                <label for="username" >Username</label>
+                <input type="text" id="username" placeholder="Enter your Username">
+              </div>
+              <div class="element">
+                <label for="password" >Password</label>
+                <input type="password" id="password"placeholder="Enter your Password">
+              </div>
+              <div class="element">
+                <button class="btn-primary">Login</button>
+              </div>
+            </div>
+          </div> -->
+          <button class="menu-btn">
+          <i class="fas fa-bars"></i></button>
+        </nav>
+       
+        <div class="header-body">
+          <div>
+            <div>
+              <p>Buy a new or used car from dealers or normal users</p>
+              <span class="bar"></span>
+              <h1>Buy Cars</h1>
+            </div>
+            <div>
+              <h1 onclick="openSellForm()">Sell Cars</h1>
+              <span class="bar"></span>
+              <p> Fill in the details of the car and list it for free</p>
+            </div>
+            <div class="btn-group">
+              <a href="#trial" class="btn btn-primary">Join Us</a>
+              <a href="#services" class="btn btn-secondary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Second image part -->
+    <div class="container">
+      <img src="/img/bottom.png" class="grid-img"/>
+      <section id="services" class="services">
+        <div class="heading">
+          <h2>What we actually do </h2>
+          <p>Launched in 2005,Car Marketplace is a car classifieds platform,with over 15 years of experience in the profile market.
+            Car Marketplace integrates ads from the following categories: <br>
+            -used cars<br>
+            -new cars.</p>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="light"></div>
+            <img src="/img/wallet.png" alt="wallet-icon" >
+            <h3>Set up your Wallet</h3>
+          </div>
+          <div class="card">
+            <div class="light"></div>
+            <img src="/img/sell.png" alt="selling-icon">
+            <h3>Sell your Car</h3>
+          </div>
+          <div class="card">
+            <div class="light"></div>
+            <img src="/img/buy.png" alt="shopping-cart-icon">
+            <h3>Buy a new Car</h3>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="container">
+    <section class="explore">
+      <div class="grid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div>
+          <h2>Explore our top car dealers </h2>
+          <p>   A car dealership, or car dealer, is a business that sells new or used cars at the retail level, based on a dealership contract with an automaker or its sales subsidiary. It can also carry a variety of Certified Pre-Owned vehicles. </p>
+        <div class="stats">
+          <div>
+            <small>Cars Listed</small>
+            <h3>140k</h3>
+            <p>New cars listed every day.</p>
+          </div>
+          <div>
+            <small>Users</small>
+            <h3>100k</h3>
+            <p>New users join every day.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="dealers">
+      <div class="heading">
+        <h2>Our top Car Dealers</h2>
+          <p>   A car dealership, or car dealer, is a business that sells new or used cars at the retail level, 
+          based on a dealership contract with an automaker or its sales subsidiary.
+           It can also carry a variety of Certified Pre-Owned vehicles. </p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <img src="/img/car-lot1.jpg" alt="car-lot" class="bg-img" >
+          <img src="/img/user1.png" alt="user" class="profile-img">
+          <h3>Fritgerz Automobile</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>5.0</span>
+          </div>
+          <p>Car Dealer from Paris</p>
+          <button class="card-btn">Follow</button>
+        </div>
+        <div class="card">
+          <img src="/img/car-lot2.jpg" alt="car-lot" class="bg-img" >
+          <img src="/img/user2.png" alt="user" class="profile-img">
+          <h3>Cancun Automobile</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>5.0</span>
+          </div>
+          <p>Car Dealer from Bucharest</p>
+          <button class="card-btn">Follow</button>
+        </div>
+        <div class="card">
+          <img src="/img/car-lot3.jpg" alt="car-lot" class="bg-img" >
+          <img src="/img/user3.jpg" alt="user" class="profile-img">
+          <h3>Geraldo Automobile</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <span>4.5</span>
+          </div>
+          <p>Car Dealer from Prague</p>
+          <button class="card-btn">Follow</button>
+        </div>
+        <div class="card">
+          <img src="/img/car-lot2.jpg" alt="car-lot" class="bg-img" >
+          <img src="/img/user2.png" alt="user" class="profile-img">
+          <h3>Donemou Automobile</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <span>4.0</span>
+          </div>
+          <p>Car Dealer from London</p>
+          <button class="card-btn">Follow</button>
+        </div>
+      </div>
+    </section>
+    </div>
+    
+      <section id="trial" class="trial">
+        <h2>Are you a dealer? Get a free trial</h2>
+       <p> Get a free trial to learn how the premium dealer account takes advantage of:<br>
+          Additional tools and services available only to professional sellers,
+          promotions scheduling at certain times of the day and discount promotion packages,
+          You follow the main business metrics to make correct decisions based on data,
+          You have your own website inside the CarMarketplace platform where customers can see all your ads.
+       </p>
+        <a href="#" class="btn btn-primary">Join Us Now</a>
+      </section>
+    
+    <div class="container">
+      <footer>
+        <div>
+          <h2>Online Marketplace</h2>
+          <p>
+            Car marketplace is a platform that has grown a lot in recent years<br>
+             with new users and dealers joining every day. 60% of dealers <br>
+             use CarMarketplace to sell their cars. </p><hr />
+          <h3>Get updates</h3>
+          <form > 
+            <div class="input-wrap">
+              <input type="email" placeholder="Enter Your Email"/>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+          </form>
+        </div> 
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li> <a href="#">Automobiles</a></li>
+            <li> <a href="#">Career</a></li>
+            <li> <a href="#">Blog</a></li>
+            <li> <a href="#">Dealer Premium</a></li>
+            <li> <a href="#">Documents </a></li>
+            <li> <a href="#">Terms</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">Marketplace</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Conditions</a></li>
+            <li><a href="#">Cookies Policy</a></li>
+            <li><a href="#">Cookie Settings</a></li>
+            <li><a href="#">Regulations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Social Media</h3>
+          <ul>
+            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+            <li><a href="https://www.linkedin.com/"target="_blank">Linkedin</a></li>
+            <li><a href="https://twitter.com/"target="_blank">Twitter</a></li>
+            <li><a href="https://web.whatsapp.com/"target="_blank">WhatsUp</a></li>
+            <li><a href="https://web.telegram.org/" target="_blank">Telegram</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="/js/menu.js"></script>
+  </body>
+</html>
