@@ -1,0 +1,496 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/7d71a79c00.js" crossorigin="anonymous"></script>
+    <title>Car MarketPlace</title>
+  </head>
+  <body>
+    
+    <!-- Header -->
+    
+        <div class="container">
+            <nav>
+                <a href="index.html" target="_self" class="brand">Car Marketplace</a>
+                <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                    <li><a href="sell.html">Sell a Car</a> </li>
+                    <li><a href="#">Buy a Car</a></li>
+                    <li><a href="#">Show Cars</a></li>
+                    <li><a id="btn-login-menu" href="login.html" class="btn btn-primary">Log in</a></li>
+                </ul>  
+                <a  href="login.html" class="btn btn-primary">Log in</a> 
+                
+                <button class="menu-btn">
+                <i class="fas fa-bars"></i></button>
+                
+            </nav>
+            <div class="sell-screen">
+                <div class="first-container">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor qui aut debitis modi atque vel veniam quibusdam nesciunt minima id quaerat quasi beatae, amet in voluptate, aspernatur labore fuga tempore?</p>
+                </div>
+                <h1 id="top">New Car Listing</h1>
+                <div class="second-container">
+                    <div id="first-section" class="first-section">
+                        <div class="form-container car-details">
+                            <h3>Car Details</h3>
+                            <fieldset>
+                                <legend>Condition:</legend>
+                                <div>
+                                <input type="radio" id="new" name="car" value="new"
+                                        checked>
+                                <label for="new">New</label>
+                                </div>
+                                <div>
+                                <input type="radio" id="used" name="car" value="used">
+                                <label for="used">Used</label>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="form-container car-general-information">
+                            <h3>General Information</h3>
+                            <div class="info-container">
+                                <div><img src="lightbulb.png" alt="info-vin"></div>
+                                <div><p>Enter the VIN code (chassis series) and we will automatically fill in the information for you whenever possible.</p></div>
+                            </div>
+                            <div class="form-input">
+                                <label>VIN:</label>
+                                <input type="text" placeholder="ex: 4Y1SL65848Z411439">
+                                <div class="where-anchor"><a>Where to find it?</a></div>
+                            </div>
+                            
+                            <label>Milage:</label>
+                            <input type="text" placeholder="ex: 100 000 km">
+                            <div class="where-anchor"><a>Where to find it?</a></div>
+                            <label for="date-form">Date of first registration:</label>
+                            <div class="date-form">
+                                <div><input type="text" placeholder="DD"></div>
+                                <div>/</div>
+                                <div><input type="text" placeholder="MM"></div>
+                                <div>/</div>
+                                <div><input type="text" placeholder="YYYY"></div>
+                            </div>
+                            <div class="where-anchor"><a>Where to find it?</a></div>
+                        </div>
+                        <div class="form-container car-technical-details">
+                            <h3>Technical Details</h3>
+                            
+                            <label for="made">Made:</label>
+                            <select id="made"></select>
+                            <div class="where-anchor"><a>Where to find it?</a></div>
+                            
+                            <label>Model:</label>
+                            <select id="model"></select>
+                            <div class="where-anchor"><a>Where to find it?</a></div>
+                            
+                            <label>Fuel:</label>
+                            <select id="fuel"></select>
+                            <div class="where-anchor"><a>Where to find it?</a></div>
+                            
+                            <label for="years">Year:</label>
+                            <select id="years"></select>
+                            </select>
+                            <div class="where-anchor"><a>Where to find it?</a></div>
+                            
+                        
+                            <label>Power [kw]:</label>
+                            <select id="power"></select>
+                            <div class="where-anchor"><a>Where to find it?</a></div>
+
+                            <label>Cilinder Capacity:</label>
+                            <select id="capacity"></select>
+                            <div class="where-anchor"><a>Where to find it?</a></div>
+
+                            <label>Door Number:</label>
+                            <select id="door_number" ></select>
+                            <div class="where-anchor"><a>Where to find it?</a></div>
+
+                            <label>Gearbox type:</label>
+                            <select id="gearbox_type"></select>
+                            <div class="where-anchor"><a>Where to find it?</a></div>
+                            
+                            <label>Version:</label>
+                            <select id="version"></select>
+                            <div class="where-anchor"><a>Where to find it?</a></div>
+                            
+                            <label>Generation:</label>
+                            <select id="generation" ></select>
+                            
+                            <div class="where-anchor"><a>Where to find it?</a></div>
+                            <label>Transmition:</label>
+                            <select id="transmission"></select>
+                            <div class="where-anchor"><a>Where to find it?</a></div>
+                            
+                            <label>Polution category:</label>
+                            <select id="emmision_standard" ></select>
+                            <div class="where-anchor"><a>Where to find it?</a></div>
+                            
+                            <label>CO2 Emissions:</label>
+                            <input type="text">
+                            <div class="where-anchor"><a>Where to find it?</a></div>
+                        </div>    
+                        <div class="form-container car-bodywork">
+                            <h3>Bodywork details</h3>
+                            <label>Bodywork type:</label>
+                            <select id="body_type" ></select>
+                            <div class="where-anchor"><a>Where to find it?</a></div>
+                            
+                            <label>Color:</label>
+                            <input type="text">
+                            <div class="where-anchor"><a>Where to find it?</a></div>
+                            
+                            <label>Color options:</label>
+                            <select id="years" name="years">
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                            </select>
+                            <div class="where-anchor"><a>Where to find it?</a></div>
+                            <div class="form-container car-bodywork"></div>
+                        </div>
+                        <div  class="circle-arrow-wrapper"><a href="#top"><div  onclick="activate()" class="arrow-circle"> <i class="fa-solid fa-arrow-right"></i></div></a></div>
+                    </div>     
+                    
+                    <div class="second-section inactive-section" id="second-section">
+                        <div class="form-container car-images">
+                            <h3>Images</h3>
+                            <div class="buttonwrap"><button class="btn btn-social">Add Images</button></div>
+                            <p>You can add up to 40 images. JPG, PNG and GIF formats are accepted.</p>
+                            &nbsp;
+                            <div class="info-container">
+                                <img src="lightbulb.png" alt="info-vin">
+                                <p>Increase the attractiveness of the ad by adding a YouTube link with a recording of the vehicle.</p>
+                            </div>
+                            <label>Youtube Video:</label>
+                            <input type="text" placeholder="ex: https://www.youtube.com/watch?v=dip20zckA">
+                        </div>
+
+
+                        <div class="form-container car-description">
+                            <h3>Vehicle Description</h3>
+                            <label>Short Description:</label>
+                            <input type="text" placeholder="ex: First Owner/ Perfect State/ New Battery">
+                            <label>Description:</label>
+                            <textarea name="description"></textarea>
+                        </div>
+
+                        <div class="form-container car-equipment">
+                            <h3>Equipment</h3>
+                            <fieldset>
+                                <legend>Audio and Connectivity</legend>
+                                <div>
+                                <input type="checkbox" id="applecarplay" name="interest" value="applecarplay" />
+                                <label for="applecarplay">Apple Carplay</label>
+                                </div>
+                                <div>
+                                <input type="checkbox" id="androidauto" name="interest" value="androidauto" />
+                                <label for="androidauto">Android auto</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="Bluetooth" name="interest" value="Bluetooth" />
+                                    <label for="Bluetooth">Bluetooth</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="Radio" name="interest" value="Radio" />
+                                    <label for="Radio">Radio</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="hfsystem" name="interest" value="hfsystem" />
+                                    <label for="hfsystem">Hands-free System</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Comfort</legend>
+                                <div>
+                                <input type="checkbox" id="applecarplay" name="interest" value="applecarplay" />
+                                <label for="applecarplay">Apple Carplay</label>
+                                </div>
+                                <div>
+                                <input type="checkbox" id="androidauto" name="interest" value="androidauto" />
+                                <label for="androidauto">Android auto</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="Bluetooth" name="interest" value="Bluetooth" />
+                                    <label for="Bluetooth">Bluetooth</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="Radio" name="interest" value="Radio" />
+                                    <label for="Radio">Radio</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="hfsystem" name="interest" value="hfsystem" />
+                                    <label for="hfsystem">Hands-free System</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Electric Vehicle</legend>
+                                <div>
+                                <input type="checkbox" id="applecarplay" name="interest" value="applecarplay" />
+                                <label for="applecarplay">Apple Carplay</label>
+                                </div>
+                                <div>
+                                <input type="checkbox" id="androidauto" name="interest" value="androidauto" />
+                                <label for="androidauto">Android auto</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="Bluetooth" name="interest" value="Bluetooth" />
+                                    <label for="Bluetooth">Bluetooth</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="Radio" name="interest" value="Radio" />
+                                    <label for="Radio">Radio</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="hfsystem" name="interest" value="hfsystem" />
+                                    <label for="hfsystem">Hands-free System</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Electronics and driver assistance</legend>
+                                <div>
+                                <input type="checkbox" id="applecarplay" name="interest" value="applecarplay" />
+                                <label for="applecarplay">Apple Carplay</label>
+                                </div>
+                                <div>
+                                <input type="checkbox" id="androidauto" name="interest" value="androidauto" />
+                                <label for="androidauto">Android auto</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="Bluetooth" name="interest" value="Bluetooth" />
+                                    <label for="Bluetooth">Bluetooth</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="Radio" name="interest" value="Radio" />
+                                    <label for="Radio">Radio</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="hfsystem" name="interest" value="hfsystem" />
+                                    <label for="hfsystem">Hands-free System</label>
+                                </div>
+                            </fieldset>
+                            
+                            <fieldset>
+                                <legend>Tuning and Performance</legend>
+                                <div>
+                                <input type="checkbox" id="applecarplay" name="interest" value="applecarplay" />
+                                <label for="applecarplay">Apple Carplay</label>
+                                </div>
+                                <div>
+                                <input type="checkbox" id="androidauto" name="interest" value="androidauto" />
+                                <label for="androidauto">Android auto</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="Bluetooth" name="interest" value="Bluetooth" />
+                                    <label for="Bluetooth">Bluetooth</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="Radio" name="interest" value="Radio" />
+                                    <label for="Radio">Radio</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="hfsystem" name="interest" value="hfsystem" />
+                                    <label for="hfsystem">Hands-free System</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Safety</legend>
+                                <div>
+                                <input type="checkbox" id="applecarplay" name="interest" value="applecarplay" />
+                                <label for="applecarplay">Apple Carplay</label>
+                                </div>
+                                <div>
+                                <input type="checkbox" id="androidauto" name="interest" value="androidauto" />
+                                <label for="androidauto">Android auto</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="Bluetooth" name="interest" value="Bluetooth" />
+                                    <label for="Bluetooth">Bluetooth</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="Radio" name="interest" value="Radio" />
+                                    <label for="Radio">Radio</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="hfsystem" name="interest" value="hfsystem" />
+                                    <label for="hfsystem">Hands-free System</label>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="form-container car-history">   
+                            <h3>History</h3>
+                            <label>Country of Origin:</label>
+                            <select id="years" name="years">
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                            </select>
+                        </div>
+                        <div class="form-container car-tags">
+                            <fieldset>
+                                <legend>Tags</legend>
+                                <div>
+                                <input type="checkbox" id="coding" name="interest" value="coding" />
+                                <label for="coding">First Owner</label>
+                                </div>
+                                <div>
+                                <input type="checkbox" id="music" name="interest" value="music" />
+                                <label for="music">No Accidents</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="music" name="interest" value="music" />
+                                    <label for="music">Registereg</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="music" name="interest" value="music" />
+                                    <label for="music">Service Book</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="music" name="interest" value="music" />
+                                    <label for="music">Old Car</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="music" name="interest" value="music" />
+                                    <label for="music">Tuning</label>
+                                </div>
+                            </fieldset>
+                        </div> 
+                        <div class="form-container car-warranty">
+                            <h3>Warranty Details</h3>
+                            <label>Warranty from production untill:</label>
+                            <div class="date-form">
+                                <div><input type="text" placeholder="DD"></div>
+                                <div>/</div>
+                                <div><input type="text" placeholder="MM"></div>
+                                <div>/</div>
+                                <div><input type="text" placeholder="YYYY"></div>
+                            </div>
+                            <label>or in limit of:</label>
+                            <input type="text" placeholder="ex: 100 000 km">
+                        </div>
+                        <div class="form-container car-price">
+                            <h3>Evaluate</h3>
+                            
+                            <label>Price:</label>
+                            <input type="text" placeholder="ex: 100 000 EUR">
+                            
+                            <fieldset>
+                                <legend>Price Details</legend>
+                                <div>
+                                <input type="checkbox" id="coding" name="interest" value="coding" />
+                                <label for="coding">Negotioating</label>
+                                </div>
+                                <div>
+                                <input type="checkbox" id="music" name="interest" value="music" />
+                                <label for="music">Leasing</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="music" name="interest" value="music" />
+                                    <label for="music">Elegible for financing</label>
+                                </div>
+                            </fieldset>
+
+                            <div class="form-container car-seller-info">
+                                <h3>Seller Info</h3>
+                                <label>Name:</label>
+                                <input type="text" placeholder="Jhon Doe">
+                                <label>City:</label>
+                                <select id="years" name="years">
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2016">2016</option>
+                                </select>
+                                <label>Phone Number:</label>
+                                <input type="text" placeholder="Phone Number">
+                            </div>
+                            
+                        </div>
+                        <div class="buttonwrap2"><button class="btn btn-social">Continue</button></div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    
+    <!-- -------------------------------END OF HEADER --------------------------------------------------------- -->
+    
+
+
+
+
+
+    <div class="container">
+      <footer>
+        <div>
+          <h2>Online Marketplace</h2>
+          <p>
+            Car marketplace is a platform that has grown a lot in recent years<br class="responsive">
+             with new users and dealers joining every day. 60% of dealers <br class="responsive">
+             use CarMarketplace to sell their cars. </p><hr />
+          <h3>Get updates</h3>
+          <form > 
+            <div class="input-wrap">
+              <input type="email" placeholder="Enter Your Email"/>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+          </form>
+        </div> 
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li> <a href="#">Automobiles</a></li>
+            <li> <a href="#">Career</a></li>
+            <li> <a href="#">Blog</a></li>
+            <li> <a href="#">Dealer Premium</a></li>
+            <li> <a href="#">Documents </a></li>
+            <li> <a href="#">Terms</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">Marketplace</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Conditions</a></li>
+            <li><a href="#">Cookies Policy</a></li>
+            <li><a href="#">Cookie Settings</a></li>
+            <li><a href="#">Regulations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Social Media</h3>
+          <ul>
+            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+            <li><a href="https://www.linkedin.com/"target="_blank">Linkedin</a></li>
+            <li><a href="https://twitter.com/"target="_blank">Twitter</a></li>
+            <li><a href="https://web.whatsapp.com/"target="_blank">WhatsUp</a></li>
+            <li><a href="https://web.telegram.org/" target="_blank">Telegram</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="menu.js"></script>
+    <script src="dropdown-select.js"></script>
+    <script src="arrow.js"></script>
+    
+  </body>
+</html>

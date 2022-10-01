@@ -36,6 +36,10 @@ h3{
   margin-bottom: 1em;
 }
 
+h1 .heading{
+    font-size: inherit;
+}
+
 a{ 
   text-decoration: none;
   color: #fff;
@@ -62,9 +66,10 @@ header{
   background:url(bg2.jpg) center;
 	position:relative;
 	background-repeat: no-repeat;
-	background-size:cover ;
+	background-size:cover;
 
 }
+
 .container{
   max-width: 1200px;
   margin:0 auto;
@@ -100,8 +105,6 @@ header .container{
 .btn-secondary{
   border:1px #ff4000 solid;
   color:rgb(255, 55, 0);
-  
-
 }
 
 .btn-secondary:hover{
@@ -220,52 +223,7 @@ cursor: pointer;
      }
 
 
-/*--------------------------------------------- sell car form styles------------------------------------------  */
 
-.popup-sell{
-  position: absolute;
-  top:-150%;
-  left: 50%;
-   transform: translate(-50%,-50%) scale(1.15);
-   width: 30vw;
-   background:radial-gradient(ellipse at top, #c31900,black);
-   z-index: 2;
-   opacity: 0;
-   box-shadow: 5px 5px 3px rgba(0, 0, 0,0.2);
-   transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
-   border:1.5px solid #fff;
- 
-}
-.popup-sell .flex-container{
-  display: flex;
- flex-direction: row;
- flex-wrap: wrap;
-
-}
-.popup-sell h2{
-  color: #fff;
-  margin-left: 2em;
-  font-size: 15px;
-  margin-bottom: 1em;
-}
-
-body.showSellForm  .popup-overlay{
-  display: block;
-  
-}
-body.showSellForm  .popup-sell{
-  top: 50%;
-  opacity: 1;
-  transform: translate(-50%,-50%) scale(1);
-  position: fixed;
-  
-}
-.popup-sell fieldset{
-  margin-left: 2em;
-  border: none;
-  color: #fff;
-  
-}
 /*--------- END END END END- END END END END-------------SELL FORM POPUP------------- END END END END-------- */
 
 
@@ -663,6 +621,387 @@ max-width: 700px;
   
  }
  
+.circle-arrow-wrapper{
+    display:flex;
+    justify-content: right;
+    
+    
+}
+.arrow-circle{
+    border-radius: 50px;
+    background-color: #ffffff50;
+    width: 2em;
+    height: 2em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.arrow-circle:hover{
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 300ms ease-in-out 0ms;
+    
+}
+.inactive-section{
+    background-color:#00000030;
+}
+.second-section:hover{
+    background-color:#00000090;
+    
+}
+  /* aldjakmdalk ----------------------------------------form page login ------------------------------   */
+  .authentication-screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background: #ffffff15;
+    border :none;
+    border-radius: 10px;
+    
+  }
+  .authentication-screen .first-container{
+    width: 60%;
+  }
+  .authentication-screen .first-container h1 {
+    margin-bottom: 2.5em;
+    font-size: 2em;
+    text-align: center;
+  }
+  .authentication-screen .first-container p {
+    margin-top: 2em;
+    margin-left: 3em;
+  }
+  .authentication-screen .second-container{
+    background-color: #ffffff15;
+    width: 40%;
+    min-height: 55em;
+ }
+  .social-media-login{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:0.2em;
+  }
+.or{
+    margin-top: 1em;
+  display:flex;
+  flex-direction: row;
+  
+}
+
+.or hr{
+  transform: rotate(90deg);
+}
+.second-container h1{
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 0.2em;
+  margin-top: 1em;
+}
+
+ .tab-header{
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.tab-body h1{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+
+}
+
+
+.tab-form .tab-header >div{
+    flex: 1;
+    padding: 0.9em;
+    text-align: center;
+    color: rgb(143, 143, 143);
+    cursor: pointer;
+}
+.tab-form .tab-header >div.active{
+  border: 1px solid #4a9ff3;
+  color: #4a9ff3;
+  background: #e9f4ff;
+}
+
+.tab-form .tab-body {
+position: relative;
+
+}
+
+
+.tab-form .tab-body >div {
+    position: absolute;
+    width: 100%;
+    top:-150vh;
+    opacity: 0;
+    padding: 5px 25px;
+    transition: opacity 300ms ease-in-out 0ms;
+}
+
+.tab-form .tab-body >div.active {
+   top: 0px;
+   opacity: 1;
+   transition: opacity 300ms ease-in-out 0ms;
+}
+
+.tab-form .tab-body >div .form-input{
+    margin: 0.5em 0;
+ }
+
+ .tab-form .tab-body >div .form-input label {
+    display: block;
+    font-size: 15px;
+    color: #fff;
+    
+ }
+
+ .tab-form .tab-body >div .form-input input {
+    width: 100%;
+    margin-top: 0.35em;
+    font-size: 15px;
+    padding: 0.4em;
+    margin-bottom: 0.7em;
+ }
+  
+
+ 
+
+.btn-social{
+    background: none;
+    border: 1px groove white;
+    border-radius: 10px;
+    color :#fff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .btn-social:hover{
+    background: rgb(255, 255, 255);
+    color :black;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+
+  .btn-google:hover{
+    background: rgb(248, 22, 2); 
+}
+.btn-facebook:hover{
+    background: rgb(0, 85, 255); 
+}
+  .btn-social img{
+    width: 0.95em;
+    height: 0.95em;
+    margin-right: 0.5em;
+  }
+.btn-facebook{
+    background-color: #4267B2;
+    border: none;
+}
+.btn-google{
+    background-color: #DB4437;
+    border: none;
+}
+
+/*  sell . html page ---------------------------------------------- */
+.sell-screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #ffffff15;
+    border :none;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    margin-top: 3em;
+    
+  }
+  .sell-screen .first-container{
+    display: none;
+  }
+  .sell-screen .first-container h1 {
+    margin-bottom: 2.5em;
+    font-size: 2em;
+    text-align: center;
+  }
+  .sell-screen .first-container p {
+    margin-top: 2em;
+    margin-left: 3em;
+  }
+  .sell-screen h3{
+    font-weight: 800;
+    margin-top: 2em;
+    text-decoration: underline;
+    text-decoration-thickness:1px ;
+    font-size: 1.45em;
+  }
+  .sell-screen .second-container{
+    background-color: #ffffff15;
+    width: 100%;
+    min-height: 55em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1em;
+ }
+.sell-screen .second-container .first-section,.sell-screen .second-container .second-section{
+     width: 45%;
+     
+     padding: 1em;
+} 
+.sell-screen .second-container .first-section,.sell-screen .second-container .second-section{
+    border-right: 1px solid #ffffff15;
+    border-left: 1px solid #ffffff15;
+}
+
+ .sell-screen .second-container fieldset{
+    border: none;
+    padding:0.4em;
+    color: white;
+    margin-top: 0.45em;
+ }
+ .sell-screen .second-container legend{
+    padding:0.7em;
+    color: white;
+    margin-top: 0.5em;
+ }
+
+ .sell-screen .second-container .form-container{
+    margin-top: 1em;
+ }
+
+ .info-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+ }
+.info-container img{
+    width: 25px;
+    height: 25px;
+    margin-right: 0.5em;
+}
+
+
+.sell-screen .form-input{
+    margin: 0.5em 0;
+ }
+
+ .sell-screen .second-container label:not(.car-details label, .car-equipment label, .car-tags label, .car-price fieldset label) {
+    display: block;
+    font-size: 15px;
+    color: #fff;
+ }
+
+ .sell-screen .second-container input:not(.car-details input, .car-equipment input, .car-tags input,.price-container input, .car-price fieldset input) {
+    width: 100%;
+    margin-top: 0.45em;
+    font-size: 15px;
+    padding: 0.4em;
+    margin-bottom: 0.7em;
+    border: none;
+    border-radius: 5px;
+ }
+
+ .sell-screen .where-anchor a{
+    color:#04AA6D;
+    cursor: pointer;
+ }
+.sell-screen .where-anchor{
+    margin: 0.5em 0 2.5em 0;
+
+}
+
+.sell-screen .date-form{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1em;
+    justify-content: space-around;
+}
+.sell-screen .date-form div:nth-child(1){
+    width: 5em;
+}
+.sell-screen .date-form div:nth-child(2){
+    text-align: center;
+    font-size: 26px;
+    line-height: 40px;
+    color: rgb(161, 162, 165);
+    margin: 0px 8px;
+    
+}
+.sell-screen .date-form div:nth-child(3){
+    width: 5em;
+}
+.sell-screen .date-form div:nth-child(4){
+    text-align: center;
+    font-size: 26px;
+    line-height: 40px;
+    color: rgb(161, 162, 165);
+    margin: 0px 8px;
+}
+.sell-screen .date-form div:nth-child(5){
+    width: 10em;
+}
+.sell-screen select{
+    width: 100%;
+    margin-top: 0.45em;
+    font-size: 15px;
+    padding: 0.4em;
+    margin-bottom: 0.7em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.car-images div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5em;
+}
+
+.form-container{
+    margin-top: 2em;
+}
+.car-equipment fieldset{
+    margin-top: 1.5em;
+}
+
+
+.sell-screen textarea{
+    width: 100%;
+    height: 10em;
+    resize: none;
+
+}
+
+
+    
+.buttonwrap {
+     margin-top: 3em ;   
+     display: flex;
+    justify-content: center;
+    margin-bottom: 0.5em;
+}
+.buttonwrap2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+margin-top: 2.5em;
+
+}
+
+
+/* Animation for red neon light */
+ @-webkit-keyframes flicker-in-1{0%{opacity:1}10%{opacity:1}10.1%{opacity:1}20.1%{opacity:1}30%{opacity:0}30.1%{opacity:1}30.5%{opacity:1}45.1%{opacity:1}50%{opacity:1}60.1%{opacity:0}65%{opacity:0}65.1%{opacity:1}75%{opacity:1}75.1%{opacity:0}77%{opacity:0}77.1%{opacity:1}85%{opacity:1}85.1%{opacity:0}86%{opacity:0}86.1%{opacity:1}100%{opacity:1}}@keyframes flicker-in-1{10%{opacity:1}10.1%{opacity:1}20.1%{opacity:1}30.1%{opacity:1}30.5%{opacity:1}30.6%{opacity:0}45%{opacity:0}45.1%{opacity:1}50%{opacity:1}55%{opacity:1}55.1%{opacity:0}57%{opacity:0}57.1%{opacity:1}60%{opacity:1}60.1%{opacity:0}65%{opacity:0}65.1%{opacity:1}75%{opacity:1}75.1%{opacity:0}77%{opacity:0}77.1%{opacity:1}85%{opacity:1}85.1%{opacity:0}86%{opacity:0}86.1%{opacity:1}100%{opacity:1}}
+ /* Animation for header-body */
+ @-webkit-keyframes slide-in-fwd-center{0%{-webkit-transform:translateZ(-1400px);transform:translateZ(-1400px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes slide-in-fwd-center{0%{-webkit-transform:translateZ(-1400px);transform:translateZ(-1400px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}
+
+
+
 
  /*--------------------------- Media queries - Responsive Design --------------------------------------------------*/
  @media screen and (max-width:1000px){
@@ -671,11 +1010,10 @@ max-width: 700px;
 }
 nav .menu{
 
-  background: rgb(255,0,0);
-  background: linear-gradient(90deg, rgba(255,0,0,0.3) 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(255,0,0,0.3) 100%);
+  background:#4c0031;
 position: absolute;
   left: 0;
-  border-radius: 5%;
+  border-radius: 10px;
   border: #eee 1px groove;
   top: 5em;
   width: 100%;
@@ -688,6 +1026,41 @@ position: absolute;
   transition: 0.6s;
   overflow: hidden;
   z-index: 9;
+}
+.first-container{
+    display: none;
+}
+.authentication-screen .second-container{
+    width: 100%;
+    flex-grow: 1;
+}
+.sell-screen  .second-container{
+    flex-direction: column;
+    
+}
+.sell-screen .second-container .first-section, .sell-screen .second-container .second-section {
+    width: 100%;
+}
+.sell-screen  h3,.sell-screen  h1{
+    text-align: center;
+}
+.sell-screen  h3{
+    margin-top:2.5em ;
+    
+}
+.sell-screen .circle-arrow-wrapper  {
+    display: none;
+}
+.sell-screen .inactive-section{
+    background-color:#00000000;
+    z-index: inherit;
+
+}
+.sell-screen .second-container .first-section{
+    border: none;
+}
+.sell-screen .second-container .second-section{
+    border: none;
 }
 nav .btn-primary{
   display: none;
@@ -769,49 +1142,3 @@ nav .menu li{
   }
   }
   
-  /* aldjakmdalk ----------------------------------------form page login ------------------------------   */
-  .authentication-screen{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    background: grey;
-    
-  }
-  .first-container{
-    flex-grow: -1;
-    
-  }
-  .first-container h1 {
-    margin-bottom: 2.5em;
-    font-size: 2em;
-    text-align: center;
-  }
-  .first-container p {
-    margin-top: 2em;
-    margin-left: 3em;
-  }
-  .second-container{
-    background: blueviolet;
-  }
-  
-.flex-container1{
-  display:flex;
-  flex-direction: row;
-}
-.flex-container1 hr{
-  transform: rotate(90deg);
-}
-.second-container h1{
-  text-align: center;
-}
-.tab-header{
-  display: flex;
-  justify-content: space-between;
-  padding: 1em;
-}
-.tab-header >div
-/* Animation for red neon light */
- @-webkit-keyframes flicker-in-1{0%{opacity:1}10%{opacity:1}10.1%{opacity:1}20.1%{opacity:1}30%{opacity:0}30.1%{opacity:1}30.5%{opacity:1}45.1%{opacity:1}50%{opacity:1}60.1%{opacity:0}65%{opacity:0}65.1%{opacity:1}75%{opacity:1}75.1%{opacity:0}77%{opacity:0}77.1%{opacity:1}85%{opacity:1}85.1%{opacity:0}86%{opacity:0}86.1%{opacity:1}100%{opacity:1}}@keyframes flicker-in-1{10%{opacity:1}10.1%{opacity:1}20.1%{opacity:1}30.1%{opacity:1}30.5%{opacity:1}30.6%{opacity:0}45%{opacity:0}45.1%{opacity:1}50%{opacity:1}55%{opacity:1}55.1%{opacity:0}57%{opacity:0}57.1%{opacity:1}60%{opacity:1}60.1%{opacity:0}65%{opacity:0}65.1%{opacity:1}75%{opacity:1}75.1%{opacity:0}77%{opacity:0}77.1%{opacity:1}85%{opacity:1}85.1%{opacity:0}86%{opacity:0}86.1%{opacity:1}100%{opacity:1}}
- /* Animation for header-body */
- @-webkit-keyframes slide-in-fwd-center{0%{-webkit-transform:translateZ(-1400px);transform:translateZ(-1400px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes slide-in-fwd-center{0%{-webkit-transform:translateZ(-1400px);transform:translateZ(-1400px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}
